@@ -12,12 +12,10 @@ body {
 /* end of common styles */
 
 /* navbar */
-.navbar {
-    height:100vh;
-}
+
 /* sidebar */
 .sidebar {
-    width: 8rem;
+    width: 6rem;
     height:100%;
     background-color :#eee;
     position: fixed; 
@@ -52,7 +50,7 @@ body {
 .social-icons-list {
     list-style: none;
     padding: 0;
-    height: 25rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -60,7 +58,7 @@ body {
 }
 
 .social-link {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #777;
     transition: color .3s;
 }
@@ -79,8 +77,8 @@ body {
 /* navigation  */
 .navigation {
     position:fixed;
-    left: -27rem;
-    width: 35rem;
+    left: -25rem;
+    width: 31rem;
     height:100%;
     background:linear-gradient(to top, rgba(34,32,41,1), rgba(34,32,41,.8)),
     url(../img/nav-bg.jpeg) center no-repeat;
@@ -94,7 +92,7 @@ body {
 
 .navigation-header {
     font-family:'Josefin Sans',sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight:300;
     letter-spacing : .2rem;
     color: #deaa86;
@@ -198,7 +196,7 @@ body {
 }
 
 .checkbox:checked ~ .navigation{
-    left:8rem;
+    left:6rem;
 
 }
 
@@ -218,8 +216,74 @@ body {
 /* end of navigation */
 /* end of navbar */
 
+/* header  */
+.header {
+    margin-left: 6rem;
+    height:100vh;
+    background:linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.4)),
+     url(../img/header-1.jpeg) no-repeat center;
+    background-size: cover;
 
+}
 
+.brand{
+    display:flex;
+    cursor: pointer;
+
+}
+
+.hotel-heading {
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color:#deaa86;
+    letter-spacing: .2rem;
+}
+
+.banner {
+    color:#ddd;
+    height:60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-heading {
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: .8rem;
+    margin-bottom: 0;
+}
+
+.banner-paragraph{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top:2rem;
+    margin-bottom:4rem;
+}
+
+.banner-button {
+    width:20rem;
+    height:3rem;
+    padding:2rem, 2.5rem;
+    font-size:2rem;
+    color:#333;
+    letter-spacing: .1rem;
+    border:none;
+    border-radius: 10rem;
+    outline: none;
+    background:linear-gradient(to right, gold, goldenrod);
+    cursor: pointer;
+    outline: none;
+}
+
+.banner-button:hover {
+    background:linear-gradient(to left, gold, goldenrod);
+   
+}
+/* end of header */
 
 
 
