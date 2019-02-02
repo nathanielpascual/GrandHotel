@@ -92,7 +92,7 @@ body {
 
 .navigation-header {
     font-family:'Josefin Sans',sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight:300;
     letter-spacing : .2rem;
     color: #deaa86;
@@ -104,7 +104,7 @@ body {
 
 }
 .navigation-search-input {
-    width:25rem;
+    width:20rem;
     padding:1rem 2rem;
     background-color: rgba(0,0,0,.3);
     font-family: 'Josefin Sans', sans-serif;
@@ -234,7 +234,7 @@ body {
 
 .hotel-heading {
     font-family: 'Josefin Sans',sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 400;
     color:#deaa86;
     letter-spacing: .2rem;
@@ -242,7 +242,7 @@ body {
 
 .banner {
     color:#ddd;
-    height:60rem;
+    height:40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,10 +251,11 @@ body {
 
 .banner-heading {
     font-family: 'Josefin Sans',sans-serif;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 400;
     margin-top: .8rem;
     margin-bottom: 0;
+    animation: anim 2s;
 }
 
 .banner-paragraph{
@@ -262,6 +263,7 @@ body {
     font-weight: 300;
     margin-top:2rem;
     margin-bottom:4rem;
+    animation: anim 1.5s .5s backwards;
 }
 
 .banner-button {
@@ -277,11 +279,25 @@ body {
     background:linear-gradient(to right, gold, goldenrod);
     cursor: pointer;
     outline: none;
+    animation: anim 1s 1s backwards;
 }
 
 .banner-button:hover {
     background:linear-gradient(to left, gold, goldenrod);
    
+}
+
+.banner-button:active {
+    transform:translateY(.2rem);
+}
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 /* end of header */
 
