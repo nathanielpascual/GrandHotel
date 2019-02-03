@@ -242,7 +242,7 @@ body {
 
 .banner {
     color:#ddd;
-    height:40rem;
+    height:60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -697,8 +697,41 @@ body {
 
 
 
+@media(max-width:1250px){
+    .about-us{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rooms-cards-wrapper{
+        flex-direction: column;
+        align-items:center;
+    }
+    .customers-card-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .customer-card:first-child{
+        margin-bottom: 2rem;
+    }
 
+}
+
+@media(max-width:1100px)
+{
+    .main-part{
+        flex-direction: column;
+
+    }
+
+    .footer-list {
+        display: flex;
+    }
+
+    .footer-list-item {
+        margin-right: 2.5rem;
+    }
+}
 
 
 
