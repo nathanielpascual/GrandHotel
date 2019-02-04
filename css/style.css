@@ -18,7 +18,7 @@ body {
     width: 6rem;
     height:100%;
     background-color :#eee;
-    position: fixed; 
+    position: fixed;
      display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +45,7 @@ body {
 
 .menu-icon:hover .line {
    width: 2.5rem;
-} 
+}
 
 .social-icons-list {
     list-style: none;
@@ -82,12 +82,13 @@ body {
     height:100%;
     background:linear-gradient(to top, rgba(34,32,41,1), rgba(34,32,41,.8)),
     url(../img/nav-bg.jpeg) center no-repeat;
-    background-size: cover;    
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     transition: left .8s cubic-bezier(1,0,0,1);
+    z-index: 5;
 }
 
 .navigation-header {
@@ -165,7 +166,7 @@ body {
     width: 0rem;
     height:.1rem;
     background-color: #deaa86;
-    position: absolute;    
+    position: absolute;
     top:1rem;
     left : -2.5rem;
     transition: width .5s cubic-bezier(1,0,0,1);
@@ -180,8 +181,8 @@ body {
     top:1rem;
     right : -2.5rem;
     transition: width .5s cubic-bezier(1,0,0,1);
-    
-} 
+
+}
 
 .navigation-link:hover::before,
 .navigation-link:hover::after {
@@ -219,7 +220,7 @@ body {
 /* header  */
 .header {
     margin-left: 6rem;
-    height:100vh;
+    height:100%;
     background:linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.4)),
      url(../img/header-1.jpeg) no-repeat center;
     background-size: cover;
@@ -284,7 +285,7 @@ body {
 
 .banner-button:hover {
     background:linear-gradient(to left, gold, goldenrod);
-   
+
 }
 
 .banner-button:active {
@@ -414,7 +415,7 @@ body {
     padding:5rem;
     text-align: center;
     color:#b85d1c;
-    
+
 }
 .common-heading{
     font-size:3.5rem;
@@ -438,7 +439,7 @@ body {
 /* Rooms */
 .rooms {
     margin-left: 6rem;
-    
+
 }
 
 .rooms-cards-wrapper{
@@ -700,7 +701,15 @@ body {
 @media(max-width:1250px){
     .about-us{
         flex-direction: column;
-        align-items: center;
+        padding-bottom: 13rem;
+    }
+
+    .about-us-content {
+      margin-bottom: 15rem;
+    }
+
+    .about-us-images {
+        margin-bottom: 13rem;
     }
     .rooms-cards-wrapper{
         flex-direction: column;
@@ -721,7 +730,6 @@ body {
 {
     .main-part{
         flex-direction: column;
-
     }
 
     .footer-list {
@@ -733,15 +741,69 @@ body {
     }
 }
 
+@media(max-width:600px)
+{
+ .banner-heading {
+   font-size:4rem;
+   text-align: center;
+ }
 
+ .banner-paragraph{
+   font-size:2.2rem;
+ }
 
+ .banner-button {
+   font-size:1.5rem;
+ }
 
+  .room-card {
+    width:45rem;
+  }
 
+  .image {
+    width:25rem;
+  }
 
+  .customer-card {
+      /* width:45rem; */
+      flex-direction: column;
+      width:20rem;
+  }
 
+  .customer-image-wrapper {
+     margin:auto 0;
+  }
 
+  .customer-image {
+      width:20rem;
+      margin-left: 0;
+  }
 
+  .customer-info{
+      padding:0 2rem;
+  }
 
+  .customer-fullname {
+      font-size:1.7rem;
+  }
 
+  .customer-paragraph-1{
+      font-size:1rem;
+  }
 
+  .customer-paragraph-2{
+      font-size:1.1rem;
+  }
 
+  .footer-list {
+    display: block;
+  }
+
+  .creator-part {
+    flex-direction: column;
+  }
+
+  .copyright-text {
+    order:1;
+  }
+}
